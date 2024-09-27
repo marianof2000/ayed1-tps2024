@@ -24,7 +24,7 @@ def clonar_repos(lista: List[List[str]]) -> None:
 def actualizar_repos(ruta: str) -> None:
     """Recorre todos los repos de los alumnos y busca actualizaciones"""
     repos = [
-        os.path.join(ruta, d)        
+        os.path.join(ruta, d)
         for d in os.listdir(ruta)
         if (os.path.isdir(os.path.join(ruta, d)) and not d.startswith("."))
     ]
